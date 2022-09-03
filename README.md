@@ -1,5 +1,4 @@
-with 3x3 boxes. 
-
+a windows desktop program for solving classic Sudoku puzzle.
  
 Input:
 
