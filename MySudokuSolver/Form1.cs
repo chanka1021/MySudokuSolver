@@ -110,7 +110,7 @@ namespace MySudokuSolver
                 for (int j = 0; j < DataGridView1.ColumnCount; j++)
                 {
                     DataGridView1.Rows[i].Cells[j].Value = null;
-                    DataGridView1.Rows[i].Cells[j].Style.ForeColor = Color.FromArgb(64, 64, 64);
+                    DataGridView1.Rows[i].Cells[j].Style.ForeColor = Color.Crimson;
                 }
             }
         }
@@ -118,10 +118,13 @@ namespace MySudokuSolver
         private void btnClear_Click_1(object sender, EventArgs e)
         {
             ClearGrid();
+            //grid unlock
+            DataGridView1.ReadOnly = false;
+
 
         }
         // Grid Fill
-      
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
